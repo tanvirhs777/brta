@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questionbank</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <!-- Dashboard  -->
+    <div class="main bg-mainbg max-w-full flex h-screen">
+       <aside class=" hidden md:block bg-[#fff] w-[15%]  border-r border-gray-200 min-h-screen">
+            <div #id="heading" class="flex p-4 gap-2 items-center">
+                <img class="w-12" src="images/brtalogo.png" alt="logo">
+                <div>
+                    <h1 class="font-medium font-sora text-xl">BRTA</h1>
+                    <p class="text-primary font-dm text-sm">Driving Excellence</p>
+                </div>
+                <i class="fa-solid fa-angle-left pl-10"></i>
+            </div>
+            <!-- Side links -->
+            <div class="link pt-5 flex flex-col gap-2 text-gray-600">
+                 
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer">
+                    <i class="fa-solid fa-sliders"></i>
+                    <a href="dashboard.html">Dashboard</a>
+                </div>
+
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer ">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <a href="mocktest.html">Mock Test</a>
+                </div>
+
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer  text-primary border border-[#6FD8C5] bg-[#b7fdf3]">
+                    <i class="fa-solid fa-book"></i>
+                    <a href="questionbank.html">Question Bank</a>
+                </div>
+
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <a href="bookinstructor.html">Book Instructor</a>
+                </div>
+
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <a href="analytics.html">Analytics</a>
+                </div>
+
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer">
+                    <i class="fa-solid fa-file-contract"></i>
+                    <a href="services.html">Services</a>
+                </div>
+
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer">
+                    <i class="fa-solid fa-trophy"></i>
+                    <a href="leaderboard.html">Leaderborad</a>
+                </div>
+
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer">
+                    <i class="fa-solid fa-gear"></i>
+                    <a href="settings.html">Settings</a>
+                </div>
+                
+            </div>
+            <div class=" bg-gray-200 flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer  pointer">
+                    <div class="rounded-lg py-1 text-xl px-3 text-primary  bg-gray-100 border border-gray-200 font-bold ">
+                      <h1>A</h1>
+                    </div>
+                    <div class="text-red-500 uppercase">
+                        <a href="login.html" class="text-red-500 font-bold uppercase">Log Out</a>
+                    <i class="fa-solid fa-right-from-bracket text-red-500"></i>
+                    </div>
+            </div>
+        </aside>
+        <!-- Main Container Part Starts Here -->
+         <div class="w-full flex-1 overflow-y-auto">
+            <div class="top h-[10%]  w-full bg-[#fff] flex justify-between py-5 px-10 items-center border-b border-gray-200">
+                <div>
+                    <h1 class="text-3xl font-medium">Questionbank</h1>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center bg-gray-200 rounded-3xl px-4 py-3 w-96">
+                        <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
+                    <input 
+                    type="text" 
+                    placeholder="Search anything..."
+                    class="bg-transparent outline-none w-full text-gray-700 placeholder-gray-500 px-2">
+                    
+                    </div>
+                    
+                    <div class="h-12  w-12 rounded-[50%] bg-gray-200 items-center justify-center flex">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <div class="h-12  w-12 rounded-[50%] bg-gray-200 items-center justify-center flex">
+                        <i class="fa-solid fa-a"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full p-10">
+
+                <div class="w-full">
+
+                
+                <div class="flex justify-between items-center mb-4">
+                    <div>
+                        <h2 class="text-xl font-medium text-gray-800 font-sora">
+                            All questions
+                        </h2>
+                        <p class="text-sm text-gray-700 font-dm">
+                            20  BRTA test questions
+                        </p>
+                    </div>
+
+                    <button class="bg-teal-500 text-white px-5 py-2 rounded-lg flex items-center gap-2 font-dm">
+                        
+                        Download Question
+                    </button>
+                </div>
+
+                <!-- Search bar  -->
+                <div class="w-full">
+                    <div class="flex items-center bg-gray-100 border border-gray-200 rounded-xl px-4 py-3">
+                        <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
+                        <input 
+                            type="text" 
+                            placeholder="Search questions..." 
+                            class="bg-transparent outline-none w-full px-3 text-sm text-gray-700 placeholder-gray-400 font-dm">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Catagory Parts -->
+            <div class="flex gap-3 flex-wrap font-dm text-sm py-5">
+
+            <button class="px-4 py-2 rounded-full bg-teal-100 text-teal-600  border border-gray-200">
+                All
+            </button>
+
+            <button class="px-4 py-2 rounded-full bg-gray-100 text-gray-700  border border-gray-200">
+                Road Signs
+            </button>
+
+            <button class="px-4 py-2 rounded-full bg-gray-100 text-gray-700  border border-gray-200">
+                Traffic Rules
+            </button>
+
+            <button class="px-4 py-2 rounded-full bg-gray-100 text-gray-700  border border-gray-200">
+                Traffic Safety
+            </button>
+
+            <button class="px-4 py-2 rounded-full bg-gray-100 text-gray-700  border border-gray-200">
+                Emergency Procedures
+            </button>
+
+            <button class="px-4 py-2 rounded-full bg-gray-100 text-gray-700  border border-gray-200">
+                Parking Rules
+            </button>
+
+        </div>
+            <!-- QB start -->
+             <div class="w-full bg-white border border-gray-200 rounded-xl p-4 flex justify-between  hover:bg-gray-50">
+
+            <!-- Left -->
+            <div class="w-full">
+                <p class="text-xs text-gray-400 font-dm">#01</p>
+
+                <h3 class="font-sora text-base text-gray-800 mb-2">
+                    What does a red octagonal sign mean?
+                </h3>
+
+                <div class="flex gap-2 mb-3 text-xs font-dm">
+                    <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full">ROAD SIGNS</span>
+                    <span class="px-2 py-1 bg-green-100 text-green-600 rounded-full">EASY</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2 text-sm font-dm">
+                    <div class="border border-gray-200 rounded-lg px-3 py-2 text-gray-600 cursor-pointer">A Slow down</div>
+                    <div class="border border-green-200 bg-green-50 text-green-600 rounded-lg px-3 py-2 cursor-pointer">B Stop completely</div>
+                    <div class="border border-gray-200 rounded-lg px-3 py-2 text-gray-600 cursor-pointer">C Give way</div>
+                    <div class="border border-gray-200 rounded-lg px-3 py-2 text-gray-600 cursor-pointer">D No entry</div>
+                </div>
+            </div>
+
+            <!-- Right -->
+            <div class="flex gap-2 ml-4">
+                <button class="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center cursor-pointer">
+                    <i class="fa-solid fa-eye-slash text-gray-500"></i>
+                </button>
+                <button class="w-9 h-9 rounded-lg border border-red-200 flex items-center justify-center cursor-pointer hover:bg-red-50">
+                    <i class="fa-solid fa-trash text-red-500"></i>
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Question Two -->
+        <div class="w-full bg-white border mt-5 border-gray-200 rounded-xl p-4 flex justify-between items-center cursor-pointer hover:bg-gray-50">
+
+    
+        <div>
+            <p class="text-xs text-gray-400 font-dm">#02</p>
+
+            <h3 class="font-sora text-base text-gray-800 mb-2">
+                What is the maximum speed limit in a residential area in Bangladesh?
+            </h3>
+
+            <div class="flex gap-2 text-xs font-dm">
+                <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full">TRAFFIC RULES</span>
+                <span class="px-2 py-1 bg-green-100 text-green-600 rounded-full">EASY</span>
+            </div>
+        </div>
+
+        
+        <div class="flex gap-2">
+            <button class="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center cursor-pointer">
+                <i class="fa-solid fa-eye text-gray-500"></i>
+            </button>
+
+            <button class="w-9 h-9 rounded-lg border border-red-200 flex items-center justify-center cursor-pointer hover:bg-red-50">
+                <i class="fa-solid fa-trash text-red-500"></i>
+            </button>
+        </div>
+
+        </div>
+
+        <!-- Question Two -->
+        <div class="w-full bg-white border mt-5 border-gray-200 rounded-xl p-4 flex justify-between items-center cursor-pointer hover:bg-gray-50">
+
+    
+        <div>
+            <p class="text-xs text-gray-400 font-dm">#02</p>
+
+            <h3 class="font-sora text-base text-gray-800 mb-2">
+                What is the maximum speed limit in a residential area in Bangladesh?
+            </h3>
+
+            <div class="flex gap-2 text-xs font-dm">
+                <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full">TRAFFIC RULES</span>
+                <span class="px-2 py-1 bg-green-100 text-green-600 rounded-full">EASY</span>
+            </div>
+        </div>
+
+        
+        <div class="flex gap-2">
+            <button class="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center cursor-pointer">
+                <i class="fa-solid fa-eye text-gray-500"></i>
+            </button>
+
+            <button class="w-9 h-9 rounded-lg border border-red-200 flex items-center justify-center cursor-pointer hover:bg-red-50">
+                <i class="fa-solid fa-trash text-red-500"></i>
+            </button>
+        </div>
+
+        </div>
+        <!-- Question Two -->
+        <div class="w-full bg-white border mt-5 border-gray-200 rounded-xl p-4 flex justify-between items-center cursor-pointer hover:bg-gray-50">
+
+    
+        <div>
+            <p class="text-xs text-gray-400 font-dm">#02</p>
+
+            <h3 class="font-sora text-base text-gray-800 mb-2">
+                What is the maximum speed limit in a residential area in Bangladesh?
+            </h3>
+
+            <div class="flex gap-2 text-xs font-dm">
+                <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full">TRAFFIC RULES</span>
+                <span class="px-2 py-1 bg-green-100 text-green-600 rounded-full">EASY</span>
+            </div>
+        </div>
+
+        
+        <div class="flex gap-2">
+            <button class="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center cursor-pointer">
+                <i class="fa-solid fa-eye text-gray-500"></i>
+            </button>
+
+            <button class="w-9 h-9 rounded-lg border border-red-200 flex items-center justify-center cursor-pointer hover:bg-red-50">
+                <i class="fa-solid fa-trash text-red-500"></i>
+            </button>
+        </div>
+
+        </div>
+        <!-- Question Two -->
+        <div class="w-full bg-white border mt-5 border-gray-200 rounded-xl p-4 flex justify-between items-center cursor-pointer hover:bg-gray-50">
+
+    
+        <div>
+            <p class="text-xs text-gray-400 font-dm">#02</p>
+
+            <h3 class="font-sora text-base text-gray-800 mb-2">
+                What is the maximum speed limit in a residential area in Bangladesh?
+            </h3>
+
+            <div class="flex gap-2 text-xs font-dm">
+                <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full">TRAFFIC RULES</span>
+                <span class="px-2 py-1 bg-green-100 text-green-600 rounded-full">EASY</span>
+            </div>
+        </div>
+
+        
+        <div class="flex gap-2">
+            <button class="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center cursor-pointer">
+                <i class="fa-solid fa-eye text-gray-500"></i>
+            </button>
+
+            <button class="w-9 h-9 rounded-lg border border-red-200 flex items-center justify-center cursor-pointer hover:bg-red-50">
+                <i class="fa-solid fa-trash text-red-500"></i>
+            </button>
+        </div>
+
+        </div>
+        <!-- Question Two -->
+        <div class="w-full bg-white border mt-5 border-gray-200 rounded-xl p-4 flex justify-between items-center cursor-pointer hover:bg-gray-50">
+
+    
+        <div>
+            <p class="text-xs text-gray-400 font-dm">#02</p>
+
+            <h3 class="font-sora text-base text-gray-800 mb-2">
+                What is the maximum speed limit in a residential area in Bangladesh?
+            </h3>
+
+            <div class="flex gap-2 text-xs font-dm">
+                <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full">TRAFFIC RULES</span>
+                <span class="px-2 py-1 bg-green-100 text-green-600 rounded-full">EASY</span>
+            </div>
+        </div>
+
+        
+        <div class="flex gap-2">
+            <button class="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center cursor-pointer">
+                <i class="fa-solid fa-eye text-gray-500"></i>
+            </button>
+
+            <button class="w-9 h-9 rounded-lg border border-red-200 flex items-center justify-center cursor-pointer hover:bg-red-50">
+                <i class="fa-solid fa-trash text-red-500"></i>
+            </button>
+        </div>
+
+        </div>
+        <!-- Question Two -->
+        <div class="w-full bg-white border mt-5 border-gray-200 rounded-xl p-4 flex justify-between items-center cursor-pointer hover:bg-gray-50">
+
+    
+        <div>
+            <p class="text-xs text-gray-400 font-dm">#02</p>
+
+            <h3 class="font-sora text-base text-gray-800 mb-2">
+                What is the maximum speed limit in a residential area in Bangladesh?
+            </h3>
+
+            <div class="flex gap-2 text-xs font-dm">
+                <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full">TRAFFIC RULES</span>
+                <span class="px-2 py-1 bg-green-100 text-green-600 rounded-full">EASY</span>
+            </div>
+        </div>
+
+        
+        <div class="flex gap-2">
+            <button class="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center cursor-pointer">
+                <i class="fa-solid fa-eye text-gray-500"></i>
+            </button>
+
+            <button class="w-9 h-9 rounded-lg border border-red-200 flex items-center justify-center cursor-pointer hover:bg-red-50">
+                <i class="fa-solid fa-trash text-red-500"></i>
+            </button>
+        </div>
+
+        </div>
+        <!-- Question Two -->
+        <div class="w-full bg-white border mt-5 border-gray-200 rounded-xl p-4 flex justify-between items-center cursor-pointer hover:bg-gray-50">
+
+    
+        <div>
+            <p class="text-xs text-gray-400 font-dm">#02</p>
+
+            <h3 class="font-sora text-base text-gray-800 mb-2">
+                What is the maximum speed limit in a residential area in Bangladesh?
+            </h3>
+
+            <div class="flex gap-2 text-xs font-dm">
+                <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full">TRAFFIC RULES</span>
+                <span class="px-2 py-1 bg-green-100 text-green-600 rounded-full">EASY</span>
+            </div>
+        </div>
+
+        
+        <div class="flex gap-2">
+            <button class="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center cursor-pointer">
+                <i class="fa-solid fa-eye text-gray-500"></i>
+            </button>
+
+            <button class="w-9 h-9 rounded-lg border border-red-200 flex items-center justify-center cursor-pointer hover:bg-red-50">
+                <i class="fa-solid fa-trash text-red-500"></i>
+            </button>
+        </div>
+
+        </div>
+        <!-- Question Two -->
+        <div class="w-full bg-white border mt-5 border-gray-200 rounded-xl p-4 flex justify-between items-center cursor-pointer hover:bg-gray-50">
+
+    
+        <div>
+            <p class="text-xs text-gray-400 font-dm">#02</p>
+
+            <h3 class="font-sora text-base text-gray-800 mb-2">
+                What is the maximum speed limit in a residential area in Bangladesh?
+            </h3>
+
+            <div class="flex gap-2 text-xs font-dm">
+                <span class="px-2 py-1 bg-blue-100 text-blue-600 rounded-full">TRAFFIC RULES</span>
+                <span class="px-2 py-1 bg-green-100 text-green-600 rounded-full">EASY</span>
+            </div>
+        </div>
+
+        
+        <div class="flex gap-2">
+            <button class="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center cursor-pointer">
+                <i class="fa-solid fa-eye text-gray-500"></i>
+            </button>
+
+            <button class="w-9 h-9 rounded-lg border border-red-200 flex items-center justify-center cursor-pointer hover:bg-red-50">
+                <i class="fa-solid fa-trash text-red-500"></i>
+            </button>
+        </div>
+
+        </div>
+        </div>
+
+
+         </div>
+        
+    </div>
+</body>
+</html>

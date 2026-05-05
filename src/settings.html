@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <!-- Dashboard  -->
+    <div class="main bg-mainbg max-w-full flex">
+        
+        <aside class=" hidden md:block bg-[#fff] w-[15%]  border-r border-gray-200 min-h-screen">
+            <div #id="heading" class="flex p-4 gap-2 items-center">
+                <img class="w-12" src="images/brtalogo.png" alt="logo">
+                <div>
+                    <h1 class="font-medium font-sora text-xl">BRTA</h1>
+                    <p class="text-primary font-dm text-sm">Driving Excellence</p>
+                </div>
+                <i class="fa-solid fa-angle-left pl-10"></i>
+            </div>
+            <!-- Side links -->
+            <div class="link pt-5 flex flex-col gap-2 text-gray-600">
+                 
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer">
+                    <i class="fa-solid fa-sliders"></i>
+                    <a href="dashboard.html">Dashboard</a>
+                </div>
+
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <a href="mocktest.html">Mock Test</a>
+                </div>
+
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer">
+                    <i class="fa-solid fa-book"></i>
+                    <a href="questionbank.html">Question Bank</a>
+                </div>
+
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <a href="bookinstructor.html">Book Instructor</a>
+                </div>
+
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <a href="analytics.html">Analytics</a>
+                </div>
+
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer">
+                    <i class="fa-solid fa-file-contract"></i>
+                    <a href="services.html">Services</a>
+                </div>
+
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer">
+                    <i class="fa-solid fa-trophy"></i>
+                    <a href="leaderboard.html">Leaderborad</a>
+                </div>
+
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer  text-primary border border-[#6FD8C5] bg-[#b7fdf3]">
+                    <i class="fa-solid fa-gear"></i>
+                    <a href="settings.html">Settings</a>
+                </div>
+                
+                
+            </div>
+            <div class=" bg-gray-200 flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer  pointer">
+                    <div class="rounded-lg py-1 text-xl px-3 text-primary  bg-gray-100 border border-gray-200 font-bold ">
+                      <h1>A</h1>
+                    </div>
+                    <div class="text-red-500 uppercase">
+                        <a href="login.html" class="text-red-500 font-bold uppercase">Log Out</a>
+                    <i class="fa-solid fa-right-from-bracket text-red-500"></i>
+                    </div>
+            </div>
+        </aside>
+        <!-- Main Container Part Starts Here -->
+         <div class="w-full flex-1  h-full">
+            <div class="top h-[10%]  w-full bg-[#fff] flex justify-between py-5 px-10 items-center border-b border-gray-200">
+                <div>
+                    <h1 class="text-3xl font-medium">Settings</h1>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center bg-gray-200 rounded-3xl px-4 py-3 w-96">
+                        <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
+                    <input 
+                    type="text" 
+                    placeholder="Search anything..."
+                    class="bg-transparent outline-none w-full text-gray-700 placeholder-gray-500 px-2">
+                    
+                    </div>
+                    
+                    <div class="h-12  w-12 rounded-[50%] bg-gray-200 items-center justify-center flex">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <div class="h-12  w-12 rounded-[50%] bg-gray-200 items-center justify-center flex">
+                        <i class="fa-solid fa-a"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="p-10">
+
+            <div class="bg-[#fff] border border-gray-200 rounded-2xl p-6 w-xl">
+
+                <!-- Title -->
+                <h2 class="font-sora font-bold text-lg text-gray-900 mb-1">
+                    Profile settings
+                </h2>
+                <p class="text-sm text-gray-500 font-dm mb-6">
+                    Personal information for your BRTA Prep account
+                </p>
+
+                <!-- Form -->
+                <div class="grid grid-cols-2 gap-4 font-dm text-sm">
+
+                    <div>
+                        <p class="mb-1">Full name</p>
+                        <input class="w-full bg-gray-100 border border-gray-200 rounded-lg px-3 py-2" value="Tanvir Hasan">
+                    </div>
+
+                    <div>
+                        <p class="mb-1">Email</p>
+                        <input class="w-full bg-gray-100 border border-gray-200 rounded-lg px-3 py-2" value="tanvirhs777@gmail.com">
+                    </div>
+
+                    <div>
+                        <p class="mb-1">Phone</p>
+                        <input class="w-full bg-gray-100 border border-gray-200 rounded-lg px-3 py-2" value="+8801773340289">
+                    </div>
+
+                    <div>
+                        <p class="mb-1">Date of birth</p>
+                        <input type="date" class="w-full bg-gray-100 border border-gray-200 rounded-lg px-3 py-2">
+                    </div>
+
+                </div>
+
+                <!-- Button -->
+                <div class="flex justify-end mt-6">
+                    <button class="bg-primary text-white px-6 py-2 rounded-lg font-dm">
+                        <a href="#">Save Changes</a>
+                    </button>
+                </div>
+
+            </div>
+
+             </div>
+
+            
+             <!-- Notification Card -->
+
+            <div class="px-10">
+
+            <div class="bg-[#fff] border border-gray-200 rounded-2xl p-6 w-xl">
+
+                <!-- Title -->
+                <h2 class="font-sora font-bold text-lg text-gray-900 mb-1">
+                    Notification preferences
+                </h2>
+                <p class="text-sm text-gray-500 font-dm mb-6">
+                    Choose how we keep you in the loop
+                </p>
+
+            <!-- Item -->
+            <div class="flex justify-between items-center py-4 border-b border-gray-200">
+                <div>
+                    <p class="font-dm font-medium text-sm text-gray-800">Email notifications</p>
+                    <p class="text-xs text-gray-500 font-dm">Updates about your tests and account</p>
+                </div>
+                <div class="">
+                 <i class="fa-solid fa-toggle-on text-primary text-3xl"></i>
+               </div>
+            </div>
+
+            <!-- Item -->
+            <div class="flex justify-between items-center py-4 border-b border-gray-200">
+                <div>
+                    <p class="font-dm font-medium text-sm text-gray-800">SMS alerts</p>
+                    <p class="text-xs text-gray-500 font-dm">Critical service reminders via SMS</p>
+                </div>
+                <div class="">
+                 <i class="fa-solid fa-toggle-on text-primary text-3xl"></i>
+               </div>
+            </div>
+
+            <!-- Item -->
+            <div class="flex justify-between items-center py-4 border-b border-gray-200">
+                <div>
+                    <p class="font-dm  font-medium text-sm text-gray-800">Test reminders</p>
+                    <p class="text-xs text-gray-500 font-dm">Daily reminders to keep your streak alive</p>
+                </div>
+               <div class="">
+                <i class="fa-solid fa-toggle-off text-gray-500 text-3xl"></i>
+               </div>
+            </div>
+
+            <!-- Item -->
+            <div class="flex justify-between items-center py-4">
+                <div>
+                    <p class="font-dm  text-sm text-gray-800">Weekly progress report</p>
+                    <p class="text-xs text-gray-500 font-dm">A digest of your performance every Sunday</p>
+                </div>
+                <div class="">
+                 <i class="fa-solid fa-toggle-on text-primary text-3xl"></i>
+               </div>
+            </div>
+
+        </div>
+
+        <div class="py-10">
+
+        
+        <div class="bg-[#fff] border border-gray-200 rounded-2xl p-6 w-xl">
+
+                        <!-- Title -->
+                <div class="mb-5">
+                    <h2 class="text-lg font-bold text-gray-900">Reset Password</h2>
+                    <p class="text-sm text-gray-500">Update your account password</p>
+                </div>
+
+                <!-- Form -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                    <!-- Current -->
+                    <div class="md:col-span-2">
+                    <label class="text-sm text-gray-600 mb-1 block">Current password</label>
+                    <input type="password" placeholder="Enter current password"
+                        class="w-full px-4 py-3 rounded-xl bg-gray-100 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-400">
+                    </div>
+
+                    <!--  New -->
+                    <div>
+                    <label class="text-sm text-gray-600 mb-1 block">New password</label>
+                    <input type="password" placeholder="Enter new password"
+                        class="w-full px-4 py-3 rounded-xl bg-gray-100 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-400">
+                    </div>
+
+                    <!-- Confirm  -->
+                    <div>
+                    <label class="text-sm text-gray-600 mb-1 block">Confirm password</label>
+                    <input type="password" placeholder="Confirm new password"
+                        class="w-full px-4 py-3 rounded-xl bg-gray-100 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-400">
+                    </div>
+
+                </div>
+
+                <!-- Button -->
+                <div class="flex justify-end mt-6">
+                    <button class="bg-teal-500 text-white px-6 py-3 rounded-xl font-medium hover:bg-teal-600 transition">
+                    Save Changes
+                    </button>
+                </div>
+
+                </div>
+                </div>
+    </div>
+
+
+         </div>
+        
+    </div>
+</body>
+</html>

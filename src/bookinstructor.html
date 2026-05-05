@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Instructo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <!-- Dashboard  -->
+    <div class="main bg-mainbg max-w-full flex">
+        <aside class=" hidden md:block bg-[#fff] w-[15%]  border-r border-gray-200 min-h-screen">
+            <div #id="heading" class="flex p-4 gap-2 items-center">
+                <img class="w-12" src="images/brtalogo.png" alt="logo">
+                <div>
+                    <h1 class="font-medium font-sora text-xl">BRTA</h1>
+                    <p class="text-primary font-dm text-sm">Driving Excellence</p>
+                </div>
+                <i class="fa-solid fa-angle-left pl-10"></i>
+            </div>
+            <!-- Side links -->
+            <div class="link pt-5 flex flex-col gap-2 text-gray-600">
+                 
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer">
+                    <i class="fa-solid fa-sliders"></i>
+                    <a href="dashboard.html">Dashboard</a>
+                </div>
+
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <a href="mocktest.html">Mock Test</a>
+                </div>
+
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer">
+                    <i class="fa-solid fa-book"></i>
+                    <a href="questionbank.html">Question Bank</a>
+                </div>
+
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer  text-primary border border-[#6FD8C5] bg-[#b7fdf3]">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <a href="bookinstructor.html">Book Instructor</a>
+                </div>
+
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <a href="analytics.html">Analytics</a>
+                </div>
+
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer">
+                    <i class="fa-solid fa-file-contract"></i>
+                    <a href="services.html">Services</a>
+                </div>
+
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer">
+                    <i class="fa-solid fa-trophy"></i>
+                    <a href="leaderboard.html">Leaderborad</a>
+                </div>
+
+                <div class="flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer hover:bg-gray-200 pointer">
+                    <i class="fa-solid fa-gear"></i>
+                    <a href="settings.html">Settings</a>
+                </div>
+                
+                
+            </div>
+            <div class=" bg-gray-200 flex gap-3 items-center h-11 w-[90%] rounded-lg mx-2  pl-5 font-medium font-dm cursor-pointer  pointer">
+                    <div class="rounded-lg py-1 text-xl px-3 text-primary  bg-gray-100 border border-gray-200 font-bold ">
+                      <h1>A</h1>
+                    </div>
+                    <div class="text-red-500 uppercase">
+                        <a href="login.html" class="text-red-500 font-bold uppercase">Log Out</a>
+                    <i class="fa-solid fa-right-from-bracket text-red-500"></i>
+                    </div>
+            </div>
+        </aside>
+        <!-- Main Container Part Starts Here -->
+         <div class="w-full flex-1 ">
+            <div class="top h-[10%]  w-full bg-[#fff] flex justify-between py-5 px-10 items-center border-b border-gray-200">
+                <div>
+                    <h1 class="text-3xl font-medium">Book Instructor</h1>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center bg-gray-200 rounded-3xl px-4 py-3 w-96">
+                        <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
+                    <input 
+                    type="text" 
+                    placeholder="Search anything..."
+                    class="bg-transparent outline-none w-full text-gray-700 placeholder-gray-500 px-2">
+                    
+                    </div>
+                    
+                    <div class="h-12  w-12 rounded-[50%] bg-gray-200 items-center justify-center flex">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <div class="h-12  w-12 rounded-[50%] bg-gray-200 items-center justify-center flex">
+                        <i class="fa-solid fa-a"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--  notice card  -->
+
+            <div class="p-10">
+                
+                <div class="bg-primary rounded-2xl p-8 text-[#fff]">
+                    
+                    <p class="text-xs font-dm opacity-80 mb-2">
+                        1-ON-1 DRIVING LESSONS
+                    </p>
+
+                    <h2 class="text-2xl font-sora font-semibold mb-2">
+                        Book a certified instructor, Ahmed
+                    </h2>
+
+                    <p class="text-sm font-dm opacity-90 max-w-xl">
+                        Hand-picked BRTA-approved instructors across Dhaka. Choose your vehicle, pick a slot and confirm your lesson in under a minute.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Filter section and search  -->
+             <div class="px-10">
+
+                <div class="flex items-center justify-between gap-4">
+
+            <div class="flex items-center bg-gray-100 border border-gray-200 rounded-2xl px-4 py-3 w-[70%]">
+                <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
+                <input 
+                    type="text"
+                    placeholder="Search by name, area "
+                    class="bg-transparent outline-none w-[70%] px-3 text-sm text-gray-700 placeholder-gray-400 font-dm"
+                >
+            </div>
+
+        
+            <div class="flex gap-2 font-dm text-sm">
+
+                <button class="px-4 py-2 rounded-full bg-primary text-white">
+                    All
+                </button>
+
+                <button class="px-4 py-2 rounded-full bg-gray-100 text-gray-700 border border-gray-200">
+                    Car
+                </button>
+
+                <button class="px-4 py-2 rounded-full bg-gray-100 text-gray-700 border border-gray-200">
+                    Motorcycle
+                </button>
+
+                <button class="px-4 py-2 rounded-full bg-gray-100 text-gray-700 border border-gray-200">
+                    Heavy Vehicle
+                </button>
+
+            </div>
+
+                </div>
+
+            </div>
+            
+
+            <!-- Instructor cards  -->
+            <div class="p-10">
+
+            <div class="grid grid-cols-3 gap-6">
+
+                 <!-- Card 1-->
+            <div class="bg-white border border-gray-200 rounded-2xl p-5">
+
+            <!-- Top -->
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-12 h-12 rounded-xl bg-teal-500 text-white flex items-center justify-center font-dm">
+                        KI
+                    </div>
+
+                    <div>
+                        <h3 class="font-sora text-base text-gray-900">Kamrul Islam</h3>
+                        <p class="text-xs text-gray-500 font-dm">⭐ 4.9 (184) · 12y exp</p>
+                    </div>
+                </div>
+
+                <!-- Desc -->
+                <p class="text-sm text-gray-600 font-dm mb-3">
+                    BRTA-certified instructor specialising in nervous first-time learners and parallel parking mastery.
+                </p>
+
+                <!-- Info -->
+                <div class="text-xs text-gray-500 font-dm space-y-1 mb-3">
+                    <p>📍 Dhanmondi, Dhaka</p>
+                    <p>🌐 Bangla, English</p>
+                </div>
+
+                <!-- Tags -->
+                <div class="flex gap-2 text-xs font-dm mb-4">
+                    <span class="px-2 py-1 bg-gray-100 rounded-full">CAR</span>
+                    <span class="px-2 py-1 bg-gray-100 rounded-full">MOTORCYCLE</span>
+                </div>
+
+                <hr class="mb-4">
+
+                <!-- Bottom -->
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="font-sora text-lg text-gray-900">৳850</p>
+                        <p class="text-xs text-gray-400 font-dm">PER HOUR</p>
+                    </div>
+
+                    <button class="bg-primary text-white px-4 py-2 rounded-lg font-dm">
+                        Book lesson
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+             <div class="bg-white border border-gray-200 rounded-2xl p-5">
+
+            <!-- Top -->
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-12 h-12 rounded-xl bg-teal-500 text-white flex items-center justify-center font-dm">
+                        KI
+                    </div>
+
+                    <div>
+                        <h3 class="font-sora text-base text-gray-900">Kamrul Islam</h3>
+                        <p class="text-xs text-gray-500 font-dm">⭐ 4.9 (184) · 12y exp</p>
+                    </div>
+                </div>
+
+                <!-- Desc -->
+                <p class="text-sm text-gray-600 font-dm mb-3">
+                    BRTA-certified instructor specialising in nervous first-time learners and parallel parking mastery.
+                </p>
+
+                <!-- Info -->
+                <div class="text-xs text-gray-500 font-dm space-y-1 mb-3">
+                    <p>Dhanmondi, Dhaka</p>
+                    <p>Bangla, English</p>
+                </div>
+
+                <!-- Tags -->
+                <div class="flex gap-2 text-xs font-dm mb-4">
+                    <span class="px-2 py-1 bg-gray-100 rounded-full">CAR</span>
+                    <span class="px-2 py-1 bg-gray-100 rounded-full">MOTORCYCLE</span>
+                </div>
+
+                <hr class="mb-4">
+
+                <!-- Bottom -->
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="font-sora text-lg text-gray-900">৳850</p>
+                        <p class="text-xs text-gray-400 font-dm">PER HOUR</p>
+                    </div>
+
+                    <button class="bg-primary text-white px-4 py-2 rounded-lg font-dm">
+                        Book lesson
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- Card 3 -->
+
+            <div class="bg-white border border-gray-200 rounded-2xl p-5">
+
+            <!-- Top -->
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-12 h-12 rounded-xl bg-teal-500 text-white flex items-center justify-center font-dm">
+                        KI
+                    </div>
+
+                    <div>
+                        <h3 class="font-sora text-base text-gray-900">Kamrul Islam</h3>
+                        <p class="text-xs text-gray-500 font-dm">⭐ 4.9 (184) · 12y exp</p>
+                    </div>
+                </div>
+
+                <!-- Desc -->
+                <p class="text-sm text-gray-600 font-dm mb-3">
+                    BRTA-certified instructor specialising in nervous first-time learners and parallel parking mastery.
+                </p>
+
+                <!-- Info -->
+                <div class="text-xs text-gray-500 font-dm space-y-1 mb-3">
+                    <p>Dhanmondi, Dhaka</p>
+                    <p>Bangla, English</p>
+                </div>
+
+                <!-- Tags -->
+                <div class="flex gap-2 text-xs font-dm mb-4">
+                    <span class="px-2 py-1 bg-gray-100 rounded-full">CAR</span>
+                    <span class="px-2 py-1 bg-gray-100 rounded-full">MOTORCYCLE</span>
+                </div>
+
+                <hr class="mb-4">
+
+                <!-- Bottom -->
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="font-sora text-lg text-gray-900">৳850</p>
+                        <p class="text-xs text-gray-400 font-dm">PER HOUR</p>
+                    </div>
+
+                    <button class="bg-primary text-white px-4 py-2 rounded-lg font-dm">
+                        Book lesson
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- Card 4 -->
+             <div class="bg-white border border-gray-200 rounded-2xl p-5">
+
+            <!-- Top -->
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-12 h-12 rounded-xl bg-teal-500 text-white flex items-center justify-center font-dm">
+                        KI
+                    </div>
+
+                    <div>
+                        <h3 class="font-sora text-base text-gray-900">Kamrul Islam</h3>
+                        <p class="text-xs text-gray-500 font-dm">⭐ 4.9 (184) · 12y exp</p>
+                    </div>
+                </div>
+
+                <!-- Desc -->
+                <p class="text-sm text-gray-600 font-dm mb-3">
+                    BRTA-certified instructor specialising in nervous first-time learners and parallel parking mastery.
+                </p>
+
+                <!-- Info -->
+                <div class="text-xs text-gray-500 font-dm space-y-1 mb-3">
+                    <p>Dhanmondi, Dhaka</p>
+                    <p>Bangla, English</p>
+                </div>
+
+                <!-- Tags -->
+                <div class="flex gap-2 text-xs font-dm mb-4">
+                    <span class="px-2 py-1 bg-gray-100 rounded-full">CAR</span>
+                    <span class="px-2 py-1 bg-gray-100 rounded-full">MOTORCYCLE</span>
+                </div>
+
+                <hr class="mb-4">
+
+                <!-- Bottom -->
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="font-sora text-lg text-gray-900">৳850</p>
+                        <p class="text-xs text-gray-400 font-dm">PER HOUR</p>
+                    </div>
+
+                    <button class="bg-primary text-white px-4 py-2 rounded-lg font-dm">
+                        Book lesson
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- Card 5 -->
+             <div class="bg-white border border-gray-200 rounded-2xl p-5">
+
+            <!-- Top -->
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-12 h-12 rounded-xl bg-teal-500 text-white flex items-center justify-center font-dm">
+                        KI
+                    </div>
+
+                    <div>
+                        <h3 class="font-sora text-base text-gray-900">Kamrul Islam</h3>
+                        <p class="text-xs text-gray-500 font-dm">⭐ 4.9 (184) · 12y exp</p>
+                    </div>
+                </div>
+
+                <!-- Desc -->
+                <p class="text-sm text-gray-600 font-dm mb-3">
+                    BRTA-certified instructor specialising in nervous first-time learners and parallel parking mastery.
+                </p>
+
+                <!-- Info -->
+                <div class="text-xs text-gray-500 font-dm space-y-1 mb-3">
+                    <p>Dhanmondi, Dhaka</p>
+                    <p>Bangla, English</p>
+                </div>
+
+                <!-- Tags -->
+                <div class="flex gap-2 text-xs font-dm mb-4">
+                    <span class="px-2 py-1 bg-gray-100 rounded-full">CAR</span>
+                    <span class="px-2 py-1 bg-gray-100 rounded-full">MOTORCYCLE</span>
+                </div>
+
+                <hr class="mb-4">
+
+                <!-- Bottom -->
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="font-sora text-lg text-gray-900">৳850</p>
+                        <p class="text-xs text-gray-400 font-dm">PER HOUR</p>
+                    </div>
+
+                    <button class="bg-primary text-white px-4 py-2 rounded-lg font-dm">
+                        Book lesson
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- Card 6 -->
+            <div class="bg-white border border-gray-200 rounded-2xl p-5">
+
+            <!-- Top -->
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-12 h-12 rounded-xl bg-teal-500 text-white flex items-center justify-center font-dm">
+                        KI
+                    </div>
+
+                    <div>
+                        <h3 class="font-sora text-base text-gray-900">Kamrul Islam</h3>
+                        <p class="text-xs text-gray-500 font-dm">⭐ 4.9 (184) · 12y exp</p>
+                    </div>
+                </div>
+
+                <!-- Desc -->
+                <p class="text-sm text-gray-600 font-dm mb-3">
+                    BRTA-certified instructor specialising in nervous first-time learners and parallel parking mastery.
+                </p>
+
+                <!-- Info -->
+                <div class="text-xs text-gray-500 font-dm space-y-1 mb-3">
+                    <p>Dhanmondi, Dhaka</p>
+                    <p>Bangla, English</p>
+                </div>
+
+                <!-- Tags -->
+                <div class="flex gap-2 text-xs font-dm mb-4">
+                    <span class="px-2 py-1 bg-gray-100 rounded-full">CAR</span>
+                    <span class="px-2 py-1 bg-gray-100 rounded-full">MOTORCYCLE</span>
+                </div>
+
+                <hr class="mb-4">
+
+                <!-- Bottom -->
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="font-sora text-lg text-gray-900">৳850</p>
+                        <p class="text-xs text-gray-400 font-dm">PER HOUR</p>
+                    </div>
+
+                    <button class="bg-primary text-white px-4 py-2 rounded-lg font-dm">
+                        Book lesson
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+         </div>
+        
+    </div>
+</body>
+</html>
